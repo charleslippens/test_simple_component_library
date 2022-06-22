@@ -1,4 +1,14 @@
 {
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/charleslippens/test_simple_component_library"
+	},
 	"name": "my-app",
 	"version": "0.1.0",
 	"dependencies": {
@@ -34,7 +44,7 @@
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
-    "react": "^18.2.0",
+		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1"
 	}
