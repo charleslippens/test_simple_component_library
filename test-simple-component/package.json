@@ -9,7 +9,7 @@
 		"type": "git",
 		"url": "https://github.com/charleslippens/test_simple_component_library"
 	},
-	"name": "my-app",
+	"name": "simple-component-test",
 	"version": "0.1.0",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.4",
@@ -19,8 +19,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build-lib": "set NODE_ENV=production test dist && babel src/lib --out-dir dist --copy-files",
-		"build": "react-scripts build",
+		"build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
